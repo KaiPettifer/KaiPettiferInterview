@@ -1,4 +1,3 @@
-
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
@@ -11,7 +10,7 @@ public class FutureFTT{
 
     public static void main(String[] args) throws Exception {
         double[][] X = new double[N][N];
-        ReadPGM.read(X, "\\\\SU2\\UN\\UP959870\\Downloads\\Chrome Downloads\\KaiLab1\\src\\kailab1\\wolf.pgm", N);
+        ReadPGM.read(X, "wolf.pgm", N);
 
         DisplayDensity display = new DisplayDensity(X, N, "Original Image");
         //get time to measure time difference between start and end
